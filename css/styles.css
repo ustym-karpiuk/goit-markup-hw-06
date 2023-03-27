@@ -614,6 +614,7 @@ img {
 }
 
 .footer-subtitle {
+	display: block;
 	color: var(--white-color);
 	font-weight: 500;
 	font-size: 16px;
@@ -631,15 +632,13 @@ img {
 	display: flex;
 }
 
-.footer-social.list {
+.footer-list {
 	display: flex;
 	gap: 16px;
-	height: 40px;
 }
 
 .footer-social {
 	margin-right: 80px;
-	width: 208px;
 }
 
 .footer-social-link {
@@ -692,10 +691,9 @@ img {
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	padding: 24px 24px;
+	padding: 72px 24px 24px;
 
 	width: 408px;
-	height: 576px;
 
 	background-color: var(--modal-background);
 }
@@ -736,7 +734,6 @@ img {
 	text-align: center;
 	letter-spacing: 0.02em;
 
-	margin-top: 48px;
 	margin-bottom: 16px;
 }
 
@@ -783,6 +780,10 @@ img {
 	align-items: flex-start;
 	padding: 0px;
 	margin-bottom: 8px;
+}
+
+.submit-block:nth-last-child(2) {
+	margin-bottom: 24px;
 }
 
 .submit-icon {
@@ -832,6 +833,10 @@ img {
 	transition-property: border, border-radius, opacity;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-box {
+	margin-bottom: 16px;
 }
 
 .comment:hover,
@@ -885,12 +890,12 @@ img {
 }
 
 .submit-button {
+	display: block;
 	width: 169px;
 	height: 56px;
 
-	margin-top: 16px;
-	margin-right: 96px;
-	margin-left: 96px;
+	margin-right: auto;
+	margin-left: auto;
 
 	background: #4d5ae5;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -916,23 +921,18 @@ img {
 /* Subscribe */
 
 .subscribe-block {
-	display: flex;
 }
 
 .subscribe-form {
 	display: flex;
-
-	position: relative;
-
-	width: 453px;
-	height: 80px;
+	gap: 24px;
 }
 
 .email-input {
 	width: 264px;
 	height: 40px;
 
-	position: absolute;
+	position: relative;
 
 	bottom: 0px;
 	left: 0px;
@@ -975,7 +975,7 @@ input.email-input:-ms-input-placeholder {
 	background: var(--brand-color);
 	border-radius: 4px;
 
-	position: absolute;
+	position: relative;
 
 	bottom: 0px;
 	right: 0px;
